@@ -7,7 +7,7 @@ def analyze(factbook_pop: str, factbook_obesity: str) -> pd.DataFrame:
     # read c2119.csv
     sample2 = pd.read_csv("data/c2119.csv")
         
-    # rename columns
+    # rename column sample 1
     sample1.rename(
     columns = {
       "Pos":"Position",
@@ -15,7 +15,7 @@ def analyze(factbook_pop: str, factbook_obesity: str) -> pd.DataFrame:
       "Value":"Obesity Rate"
     }, inplace = True
     )
-    
+    # rename column sample 2
     sample2.rename(
     columns = {
       "Pos":"Position",
